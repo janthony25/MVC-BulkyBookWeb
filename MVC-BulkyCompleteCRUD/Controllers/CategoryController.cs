@@ -33,6 +33,7 @@ namespace MVC_BulkyCompleteCRUD.Controllers
         {
             _db.Categories.Add(obj);
             _db.SaveChanges();
+            TempData["Success"] = "Category added succesfully";
             return RedirectToAction("Index");
         }
 
@@ -61,6 +62,7 @@ namespace MVC_BulkyCompleteCRUD.Controllers
         {
             _db.Categories.Update(obj);
             _db.SaveChanges();
+            TempData["Success"] = "Category updated succesfully";
             return RedirectToAction("Index");
         }
 
@@ -98,6 +100,7 @@ namespace MVC_BulkyCompleteCRUD.Controllers
 
             _db.Categories.Remove(obj);
             _db.SaveChanges();
+            TempData["Success"] = "Category deleted succesfully";
             return RedirectToAction("Index");
         }
 
