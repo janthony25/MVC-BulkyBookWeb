@@ -1,5 +1,5 @@
+using BulkyBook.DataAccess;
 using Microsoft.EntityFrameworkCore;
-using MVC_BulkyCompleteCRUD.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

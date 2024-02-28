@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MVC_BulkyCompleteCRUD.Data;
-using MVC_BulkyCompleteCRUD.Models;
+﻿using BulkyBook.DataAccess;
+using BulkyBook.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MVC_BulkyCompleteCRUD.Controllers
 {

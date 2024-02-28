@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MVC_BulkyCompleteCRUD.Models;
+﻿using BulkyBook.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace MVC_BulkyCompleteCRUD.Data
+namespace BulkyBook.DataAccess
 {
     public class ApplicationDbContext : DbContext
     {
