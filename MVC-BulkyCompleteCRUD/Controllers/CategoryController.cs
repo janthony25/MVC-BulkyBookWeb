@@ -45,14 +45,16 @@ namespace MVC_BulkyCompleteCRUD.Controllers
             {
                 return NotFound();
             }
-            var categoryFromDb = _db.Categories.Find(id);
+            // var categoryFromDb = _db.Categories.Find(id);
 
-            if (categoryFromDb == null)
+            var categoryFromDbFirst = _db.Categories.FirstOrDefault(u => u.Name == "id");
+
+            if (categoryFromDbFirst == null)
             {
                 return NotFound();
             }
 
-            return View(categoryFromDb);
+            return View(categoryFromDbFirst);
         }
 
         //POST
